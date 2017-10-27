@@ -76,6 +76,8 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardarDireccion = new System.Windows.Forms.Button();
+            this.btnGuardarContacto = new System.Windows.Forms.Button();
             this.grpContacto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContacto)).BeginInit();
             this.grpDireccion.SuspendLayout();
@@ -131,6 +133,7 @@
             // 
             // grpContacto
             // 
+            this.grpContacto.Controls.Add(this.btnGuardarContacto);
             this.grpContacto.Controls.Add(this.txbTelefono);
             this.grpContacto.Controls.Add(this.txbMail);
             this.grpContacto.Controls.Add(this.txbNombresContacto);
@@ -181,7 +184,7 @@
             this.dgvContacto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContacto.Location = new System.Drawing.Point(9, 71);
             this.dgvContacto.Name = "dgvContacto";
-            this.dgvContacto.Size = new System.Drawing.Size(1031, 128);
+            this.dgvContacto.Size = new System.Drawing.Size(1031, 99);
             this.dgvContacto.TabIndex = 10;
             // 
             // lblTelefono
@@ -222,6 +225,7 @@
             // 
             // grpDireccion
             // 
+            this.grpDireccion.Controls.Add(this.btnGuardarDireccion);
             this.grpDireccion.Controls.Add(this.cmbPais);
             this.grpDireccion.Controls.Add(this.cmbProvincia);
             this.grpDireccion.Controls.Add(this.txbLocalidad);
@@ -251,7 +255,7 @@
             this.cmbPais.FormattingEnabled = true;
             this.cmbPais.Location = new System.Drawing.Point(813, 47);
             this.cmbPais.Name = "cmbPais";
-            this.cmbPais.Size = new System.Drawing.Size(230, 21);
+            this.cmbPais.Size = new System.Drawing.Size(227, 21);
             this.cmbPais.TabIndex = 22;
             // 
             // cmbProvincia
@@ -287,7 +291,7 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(978, 20);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(65, 20);
+            this.textBox10.Size = new System.Drawing.Size(62, 20);
             this.textBox10.TabIndex = 17;
             // 
             // txbCP
@@ -309,7 +313,7 @@
             this.dgvDireccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDireccion.Location = new System.Drawing.Point(9, 71);
             this.dgvDireccion.Name = "dgvDireccion";
-            this.dgvDireccion.Size = new System.Drawing.Size(1034, 128);
+            this.dgvDireccion.Size = new System.Drawing.Size(1031, 99);
             this.dgvDireccion.TabIndex = 11;
             // 
             // lblPais
@@ -387,6 +391,7 @@
             // grpCliente
             // 
             this.grpCliente.Controls.Add(this.txbNombreBusqueda);
+            this.grpCliente.Controls.Add(this.btnBuscar);
             this.grpCliente.Controls.Add(this.txbApellidoBusqueda);
             this.grpCliente.Controls.Add(this.txbCUILBusqueda);
             this.grpCliente.Controls.Add(this.lblNombreBusqueda);
@@ -453,7 +458,7 @@
             this.dgvBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBusqueda.Location = new System.Drawing.Point(8, 45);
             this.dgvBusqueda.Name = "dgvBusqueda";
-            this.dgvBusqueda.Size = new System.Drawing.Size(1032, 126);
+            this.dgvBusqueda.Size = new System.Drawing.Size(1031, 99);
             this.dgvBusqueda.TabIndex = 15;
             // 
             // txbCUIL
@@ -487,7 +492,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(902, 671);
+            this.btnBuscar.Location = new System.Drawing.Point(966, 148);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 22;
@@ -510,11 +515,28 @@
             this.dtpNacimiento.Size = new System.Drawing.Size(200, 20);
             this.dtpNacimiento.TabIndex = 0;
             // 
+            // btnGuardarDireccion
+            // 
+            this.btnGuardarDireccion.Location = new System.Drawing.Point(966, 176);
+            this.btnGuardarDireccion.Name = "btnGuardarDireccion";
+            this.btnGuardarDireccion.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardarDireccion.TabIndex = 24;
+            this.btnGuardarDireccion.Text = "Guardar";
+            this.btnGuardarDireccion.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardarContacto
+            // 
+            this.btnGuardarContacto.Location = new System.Drawing.Point(966, 176);
+            this.btnGuardarContacto.Name = "btnGuardarContacto";
+            this.btnGuardarContacto.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardarContacto.TabIndex = 25;
+            this.btnGuardarContacto.Text = "Guardar";
+            this.btnGuardarContacto.UseVisualStyleBackColor = true;
+            // 
             // Cliente
             // 
             this.ClientSize = new System.Drawing.Size(1074, 701);
             this.Controls.Add(this.dtpNacimiento);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbNacionalidad);
             this.Controls.Add(this.txbNombres);
@@ -593,5 +615,7 @@
         private System.Windows.Forms.ComboBox cmbNacionalidad;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DateTimePicker dtpNacimiento;
+        private System.Windows.Forms.Button btnGuardarContacto;
+        private System.Windows.Forms.Button btnGuardarDireccion;
     }
 }
