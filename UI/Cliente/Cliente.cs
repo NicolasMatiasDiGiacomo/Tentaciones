@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI
+namespace UI.Cliente
 {
-    public partial class Form1 : Form
+    public partial class Cliente : Form
     {
-        public Form1()
+        public Cliente()
         {
             InitializeComponent();
-        }
-
-        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
