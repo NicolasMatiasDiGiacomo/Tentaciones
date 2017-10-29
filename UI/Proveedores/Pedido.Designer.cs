@@ -39,6 +39,10 @@
             this.cmbTipoPago = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.grpProveedor = new System.Windows.Forms.GroupBox();
+            this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaHasta = new System.Windows.Forms.Label();
+            this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaDesde = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txbCUITBusqueda = new System.Windows.Forms.TextBox();
             this.lblCUITBusqueda = new System.Windows.Forms.Label();
@@ -47,6 +51,8 @@
             this.btnEliminarProducto = new System.Windows.Forms.Button();
             this.dgvDireccion = new System.Windows.Forms.DataGridView();
             this.grpProducto = new System.Windows.Forms.GroupBox();
+            this.btnNuevoProducto = new System.Windows.Forms.Button();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.cmbEstadoBusqueda = new System.Windows.Forms.ComboBox();
             this.lblEstadoBusqueda = new System.Windows.Forms.Label();
             this.txbDescripcionBusqueda = new System.Windows.Forms.TextBox();
@@ -58,13 +64,7 @@
             this.lblMarcaBusqueda = new System.Windows.Forms.Label();
             this.lblNombreBusqueda = new System.Windows.Forms.Label();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.dtpFechaPedido = new System.Windows.Forms.DateTimePicker();
-            this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
-            this.lblFechaDesde = new System.Windows.Forms.Label();
-            this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
-            this.lblFechaHasta = new System.Windows.Forms.Label();
-            this.btnNuevoProducto = new System.Windows.Forms.Button();
             this.grpProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).BeginInit();
             this.grpDetallePedido.SuspendLayout();
@@ -174,6 +174,38 @@
             this.grpProveedor.TabStop = false;
             this.grpProveedor.Text = "Proveedores";
             // 
+            // dtpFechaHasta
+            // 
+            this.dtpFechaHasta.Location = new System.Drawing.Point(840, 19);
+            this.dtpFechaHasta.Name = "dtpFechaHasta";
+            this.dtpFechaHasta.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaHasta.TabIndex = 47;
+            // 
+            // lblFechaHasta
+            // 
+            this.lblFechaHasta.AutoSize = true;
+            this.lblFechaHasta.Location = new System.Drawing.Point(718, 23);
+            this.lblFechaHasta.Name = "lblFechaHasta";
+            this.lblFechaHasta.Size = new System.Drawing.Size(116, 13);
+            this.lblFechaHasta.TabIndex = 46;
+            this.lblFechaHasta.Text = "Fecha de pedido hasta";
+            // 
+            // dtpFechaDesde
+            // 
+            this.dtpFechaDesde.Location = new System.Drawing.Point(512, 19);
+            this.dtpFechaDesde.Name = "dtpFechaDesde";
+            this.dtpFechaDesde.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaDesde.TabIndex = 45;
+            // 
+            // lblFechaDesde
+            // 
+            this.lblFechaDesde.AutoSize = true;
+            this.lblFechaDesde.Location = new System.Drawing.Point(383, 22);
+            this.lblFechaDesde.Name = "lblFechaDesde";
+            this.lblFechaDesde.Size = new System.Drawing.Size(119, 13);
+            this.lblFechaDesde.TabIndex = 44;
+            this.lblFechaDesde.Text = "Fecha de pedido desde";
+            // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(966, 148);
@@ -216,7 +248,7 @@
             this.grpDetallePedido.Size = new System.Drawing.Size(1047, 205);
             this.grpDetallePedido.TabIndex = 39;
             this.grpDetallePedido.TabStop = false;
-            this.grpDetallePedido.Text = "Detalle pedido";
+            this.grpDetallePedido.Text = "Detalle de pedido";
             // 
             // btnEliminarProducto
             // 
@@ -256,6 +288,24 @@
             this.grpProducto.TabIndex = 42;
             this.grpProducto.TabStop = false;
             this.grpProducto.Text = "Productos";
+            // 
+            // btnNuevoProducto
+            // 
+            this.btnNuevoProducto.Location = new System.Drawing.Point(848, 176);
+            this.btnNuevoProducto.Name = "btnNuevoProducto";
+            this.btnNuevoProducto.Size = new System.Drawing.Size(111, 23);
+            this.btnNuevoProducto.TabIndex = 38;
+            this.btnNuevoProducto.Text = "Nuevo Producto";
+            this.btnNuevoProducto.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.Location = new System.Drawing.Point(965, 176);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarProducto.TabIndex = 37;
+            this.btnAgregarProducto.Text = "Agregar";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
             // 
             // cmbEstadoBusqueda
             // 
@@ -348,62 +398,12 @@
             this.dgvProductos.Size = new System.Drawing.Size(1032, 99);
             this.dgvProductos.TabIndex = 15;
             // 
-            // btnAgregarProducto
-            // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(965, 176);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarProducto.TabIndex = 37;
-            this.btnAgregarProducto.Text = "Agregar";
-            this.btnAgregarProducto.UseVisualStyleBackColor = true;
-            // 
             // dtpFechaPedido
             // 
             this.dtpFechaPedido.Location = new System.Drawing.Point(862, 12);
             this.dtpFechaPedido.Name = "dtpFechaPedido";
             this.dtpFechaPedido.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaPedido.TabIndex = 43;
-            // 
-            // dtpFechaDesde
-            // 
-            this.dtpFechaDesde.Location = new System.Drawing.Point(512, 19);
-            this.dtpFechaDesde.Name = "dtpFechaDesde";
-            this.dtpFechaDesde.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaDesde.TabIndex = 45;
-            // 
-            // lblFechaDesde
-            // 
-            this.lblFechaDesde.AutoSize = true;
-            this.lblFechaDesde.Location = new System.Drawing.Point(383, 22);
-            this.lblFechaDesde.Name = "lblFechaDesde";
-            this.lblFechaDesde.Size = new System.Drawing.Size(119, 13);
-            this.lblFechaDesde.TabIndex = 44;
-            this.lblFechaDesde.Text = "Fecha de pedido desde";
-            // 
-            // dtpFechaHasta
-            // 
-            this.dtpFechaHasta.Location = new System.Drawing.Point(840, 19);
-            this.dtpFechaHasta.Name = "dtpFechaHasta";
-            this.dtpFechaHasta.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaHasta.TabIndex = 47;
-            // 
-            // lblFechaHasta
-            // 
-            this.lblFechaHasta.AutoSize = true;
-            this.lblFechaHasta.Location = new System.Drawing.Point(718, 23);
-            this.lblFechaHasta.Name = "lblFechaHasta";
-            this.lblFechaHasta.Size = new System.Drawing.Size(116, 13);
-            this.lblFechaHasta.TabIndex = 46;
-            this.lblFechaHasta.Text = "Fecha de pedido hasta";
-            // 
-            // btnNuevoProducto
-            // 
-            this.btnNuevoProducto.Location = new System.Drawing.Point(848, 176);
-            this.btnNuevoProducto.Name = "btnNuevoProducto";
-            this.btnNuevoProducto.Size = new System.Drawing.Size(111, 23);
-            this.btnNuevoProducto.TabIndex = 38;
-            this.btnNuevoProducto.Text = "Nuevo Producto";
-            this.btnNuevoProducto.UseVisualStyleBackColor = true;
             // 
             // Pedido
             // 

@@ -63,10 +63,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente\Cliente.cs">
+    <Compile Include="Clientes\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cliente\Cliente.Designer.cs">
+    <Compile Include="Clientes\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
@@ -75,51 +75,57 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto\Categoria.cs">
+    <Compile Include="Productos\Categoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto\Categoria.Designer.cs">
+    <Compile Include="Productos\Categoria.Designer.cs">
       <DependentUpon>Categoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto\Marca.cs">
+    <Compile Include="Productos\Marca.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto\Marca.Designer.cs">
+    <Compile Include="Productos\Marca.Designer.cs">
       <DependentUpon>Marca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto\Producto.cs">
+    <Compile Include="Productos\Producto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto\Producto.Designer.cs">
+    <Compile Include="Productos\Producto.Designer.cs">
       <DependentUpon>Producto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor\Pedido.cs">
+    <Compile Include="Proveedores\Pedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedor\Pedido.Designer.cs">
+    <Compile Include="Proveedores\Pedido.Designer.cs">
       <DependentUpon>Pedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Proveedor\Proveedor.cs">
+    <Compile Include="Proveedores\Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedor\Proveedor.Designer.cs">
+    <Compile Include="Proveedores\Proveedor.Designer.cs">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cliente\Cliente.resx">
+    <Compile Include="Ventas\Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clientes\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto\Categoria.resx">
+    <EmbeddedResource Include="Productos\Categoria.resx">
       <DependentUpon>Categoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto\Marca.resx">
+    <EmbeddedResource Include="Productos\Marca.resx">
       <DependentUpon>Marca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto\Producto.resx">
+    <EmbeddedResource Include="Productos\Producto.resx">
       <DependentUpon>Producto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,11 +137,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proveedor\Pedido.resx">
+    <EmbeddedResource Include="Proveedores\Pedido.resx">
       <DependentUpon>Pedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Proveedor\Proveedor.resx">
+    <EmbeddedResource Include="Proveedores\Proveedor.resx">
       <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
