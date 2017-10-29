@@ -39,7 +39,7 @@
             this.dgvBusqueda = new System.Windows.Forms.DataGridView();
             this.grpPagos = new System.Windows.Forms.GroupBox();
             this.btnSeleccionar = new System.Windows.Forms.Button();
-            this.dgvDireccion = new System.Windows.Forms.DataGridView();
+            this.dgvPagos = new System.Windows.Forms.DataGridView();
             this.lblTipoPago = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblMonto = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.grpCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).BeginInit();
             this.grpPagos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDireccion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPagos)).BeginInit();
             this.SuspendLayout();
             // 
             // grpCliente
@@ -136,7 +136,7 @@
             // grpPagos
             // 
             this.grpPagos.Controls.Add(this.btnSeleccionar);
-            this.grpPagos.Controls.Add(this.dgvDireccion);
+            this.grpPagos.Controls.Add(this.dgvPagos);
             this.grpPagos.Location = new System.Drawing.Point(12, 184);
             this.grpPagos.Name = "grpPagos";
             this.grpPagos.Size = new System.Drawing.Size(1050, 174);
@@ -153,13 +153,13 @@
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.UseVisualStyleBackColor = true;
             // 
-            // dgvDireccion
+            // dgvPagos
             // 
-            this.dgvDireccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDireccion.Location = new System.Drawing.Point(9, 19);
-            this.dgvDireccion.Name = "dgvDireccion";
-            this.dgvDireccion.Size = new System.Drawing.Size(1031, 120);
-            this.dgvDireccion.TabIndex = 11;
+            this.dgvPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPagos.Location = new System.Drawing.Point(9, 19);
+            this.dgvPagos.Name = "dgvPagos";
+            this.dgvPagos.Size = new System.Drawing.Size(1031, 120);
+            this.dgvPagos.TabIndex = 11;
             // 
             // lblTipoPago
             // 
@@ -221,7 +221,7 @@
             this.grpCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusqueda)).EndInit();
             this.grpPagos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDireccion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPagos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,7 +240,7 @@
         private System.Windows.Forms.DataGridView dgvBusqueda;
         private System.Windows.Forms.GroupBox grpPagos;
         private System.Windows.Forms.Button btnSeleccionar;
-        private System.Windows.Forms.DataGridView dgvDireccion;
+        private System.Windows.Forms.DataGridView dgvPagos;
         private System.Windows.Forms.Label lblTipoPago;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblMonto;
