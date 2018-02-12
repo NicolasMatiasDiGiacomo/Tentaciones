@@ -18,11 +18,11 @@ namespace UI.Servicios
         public Backup()
         {
             InitializeComponent();
-            string nombre = "Marco";
-            string nombreEncriptado = new Criptografia().encriptar(nombre);
-            string nombreDesencriptado = new Criptografia().desencriptar(nombreEncriptado);
-            MessageBox.Show(nombreEncriptado);
-            MessageBox.Show(nombreDesencriptado);
+            //string nombre = "Marco";
+            //string nombreEncriptado = new Criptografia().encriptar(nombre);
+            //string nombreDesencriptado = new Criptografia().desencriptar(nombreEncriptado);
+            //MessageBox.Show(nombreEncriptado);
+            //MessageBox.Show(nombreDesencriptado);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
