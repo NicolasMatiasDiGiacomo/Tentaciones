@@ -52,6 +52,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,17 +64,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clientes\Cliente.cs">
+    <Compile Include="Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes\Cliente.Designer.cs">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <Compile Include="Clientes\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clientes\Pago.cs">
+    <Compile Include="Clientes\Contactos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes\Pago.Designer.cs">
-      <DependentUpon>Pago.cs</DependentUpon>
+    <Compile Include="Clientes\Contactos.Designer.cs">
+      <DependentUpon>Contactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Direcciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Direcciones.Designer.cs">
+      <DependentUpon>Direcciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Paises.Designer.cs">
+      <DependentUpon>Paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Provincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Provincias.Designer.cs">
+      <DependentUpon>Provincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\TipoPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\TipoPagos.Designer.cs">
+      <DependentUpon>TipoPagos.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -81,67 +112,94 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Categoria.cs">
+    <Compile Include="Productos\Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Categoria.Designer.cs">
-      <DependentUpon>Categoria.cs</DependentUpon>
+    <Compile Include="Productos\Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Marca.cs">
+    <Compile Include="Productos\Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Marca.Designer.cs">
-      <DependentUpon>Marca.cs</DependentUpon>
+    <Compile Include="Productos\Marcas.Designer.cs">
+      <DependentUpon>Marcas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos\Producto.cs">
+    <Compile Include="Productos\Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos\Producto.Designer.cs">
-      <DependentUpon>Producto.cs</DependentUpon>
+    <Compile Include="Productos\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedores\Pedido.cs">
+    <Compile Include="Proveedores\Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedores\Pedido.Designer.cs">
-      <DependentUpon>Pedido.cs</DependentUpon>
+    <Compile Include="Proveedores\Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Proveedores\Proveedor.cs">
+    <Compile Include="Proveedores\Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedores\Proveedor.Designer.cs">
-      <DependentUpon>Proveedor.cs</DependentUpon>
+    <Compile Include="Proveedores\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Factura.cs">
+    <Compile Include="Servicios\Backup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas\Factura.Designer.cs">
-      <DependentUpon>Factura.cs</DependentUpon>
+    <Compile Include="Servicios\Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Venta.cs">
+    <Compile Include="Ventas\Facturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas\Venta.Designer.cs">
-      <DependentUpon>Venta.cs</DependentUpon>
+    <Compile Include="Ventas\Facturas.Designer.cs">
+      <DependentUpon>Facturas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Clientes\Cliente.resx">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <Compile Include="Ventas\TipoFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\TipoFacturas.Designer.cs">
+      <DependentUpon>TipoFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clientes\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes\Pago.resx">
-      <DependentUpon>Pago.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes\Contactos.resx">
+      <DependentUpon>Contactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Direcciones.resx">
+      <DependentUpon>Direcciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Paises.resx">
+      <DependentUpon>Paises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Provincias.resx">
+      <DependentUpon>Provincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\TipoPagos.resx">
+      <DependentUpon>TipoPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Categoria.resx">
-      <DependentUpon>Categoria.cs</DependentUpon>
+    <EmbeddedResource Include="Productos\Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Marca.resx">
-      <DependentUpon>Marca.cs</DependentUpon>
+    <EmbeddedResource Include="Productos\Marcas.resx">
+      <DependentUpon>Marcas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos\Producto.resx">
-      <DependentUpon>Producto.cs</DependentUpon>
+    <EmbeddedResource Include="Productos\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,17 +210,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proveedores\Pedido.resx">
-      <DependentUpon>Pedido.cs</DependentUpon>
+    <EmbeddedResource Include="Proveedores\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Proveedores\Proveedor.resx">
-      <DependentUpon>Proveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Proveedores\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\Factura.resx">
-      <DependentUpon>Factura.cs</DependentUpon>
+    <EmbeddedResource Include="Servicios\Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\Venta.resx">
-      <DependentUpon>Venta.cs</DependentUpon>
+    <EmbeddedResource Include="Ventas\Facturas.resx">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\TipoFacturas.resx">
+      <DependentUpon>TipoFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -188,6 +252,20 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{69f48810-a5d5-4dde-9701-728d3b61cc78}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{07f9b255-8106-438a-ad7c-a793d11d704a}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios\Servicios.csproj">
+      <Project>{933f2e79-3872-4812-b42c-981c1bd203e6}</Project>
+      <Name>Servicios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
