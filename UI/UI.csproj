@@ -106,6 +106,12 @@
     <Compile Include="Clientes\TipoPagos.Designer.cs">
       <DependentUpon>TipoPagos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loggin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loggin.Designer.cs">
+      <DependentUpon>Loggin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,11 +150,17 @@
     <Compile Include="Proveedores\Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Servicios\Backup.cs">
+    <Compile Include="Servicios\CrearBackup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Servicios\Backup.Designer.cs">
-      <DependentUpon>Backup.cs</DependentUpon>
+    <Compile Include="Servicios\CrearBackup.Designer.cs">
+      <DependentUpon>CrearBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\RestaurarBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios\RestaurarBackup.Designer.cs">
+      <DependentUpon>RestaurarBackup.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventas\Facturas.cs">
       <SubType>Form</SubType>
@@ -189,6 +201,9 @@
     <EmbeddedResource Include="Clientes\TipoPagos.resx">
       <DependentUpon>TipoPagos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Loggin.resx">
+      <DependentUpon>Loggin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,8 +231,11 @@
     <EmbeddedResource Include="Proveedores\Proveedores.resx">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Servicios\Backup.resx">
-      <DependentUpon>Backup.cs</DependentUpon>
+    <EmbeddedResource Include="Servicios\CrearBackup.resx">
+      <DependentUpon>CrearBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios\RestaurarBackup.resx">
+      <DependentUpon>RestaurarBackup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\Facturas.resx">
       <DependentUpon>Facturas.cs</DependentUpon>

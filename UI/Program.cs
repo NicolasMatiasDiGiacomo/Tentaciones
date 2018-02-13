@@ -16,7 +16,7 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI.Servicios.Backup());
+            Application.Run(new UI.Servicios.RestaurarBackup());
             //Application.Run(new UI.Clientes.Contactos(new Form()));
         }
     }

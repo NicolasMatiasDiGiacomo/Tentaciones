@@ -53,6 +53,7 @@
     <Compile Include="DALProvincia.cs" />
     <Compile Include="DALTipoFactura.cs" />
     <Compile Include="DALTipoPago.cs" />
+    <Compile Include="DALUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

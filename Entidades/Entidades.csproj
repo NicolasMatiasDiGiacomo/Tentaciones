@@ -61,6 +61,7 @@
     <Compile Include="Provincia.cs" />
     <Compile Include="TipoFactura.cs" />
     <Compile Include="TipoPago.cs" />
+    <Compile Include="Usuario.cs" />
     <Compile Include="Venta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
