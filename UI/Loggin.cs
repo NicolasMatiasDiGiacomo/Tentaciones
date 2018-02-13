@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Servicios;
+using Servicios.Seguridad;
 
 namespace UI
 {
@@ -32,12 +32,27 @@ namespace UI
             usuario.contraseña = new Criptografia().encriptar(txbContraseña.Text);
             List<object> usuarios = new List<object>(); 
             usuarios = dalUsuario.validarUsuario(usuario);
-            if (usuarios.Any())
+            if (!usuarios.Any())
             {
-                usuarios = dalUsuario.validarContraseña(usuario);
+                MessageBox.Show("El usuario no es correcto");
+                return;
             }
 
-            MessageBox.Show(new Criptografia().encriptar(txbContraseña.Text));
+            usuarios = dalUsuario.validarContraseña(usuario);
+            if (!usuarios.Any())
+            {
+                MessageBox.Show("La contraseña no es correcta");
+                return;
+            }
+
+            Sesion.activa().usuario = (Entidades.Usuario)usuarios.First();
+            UI.Menu menuForm = new UI.Menu();
+            this.Hide();
+            menuForm.ShowDialog(this);
+            this.Show();
+            txbUsuario.Clear();
+            txbContraseña.Clear();
+            usuarios = new List<object>();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Servicios.Seguridad;
 
 namespace UI
 {
@@ -15,6 +16,8 @@ namespace UI
         public Menu()
         {
             InitializeComponent();
+            MessageBox.Show(Sesion.activa().usuario.usuario);
+            MessageBox.Show(Sesion.activa().usuario.contraseña);
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
