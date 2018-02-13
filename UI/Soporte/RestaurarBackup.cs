@@ -13,8 +13,8 @@ namespace UI.Servicios
 {
     public partial class RestaurarBackup : Form
     {
-        DAL.DALBackup dalBackup = new DAL.DALBackup();
-        Entidades.Backup backup = new Entidades.Backup();
+        DALBackup dalBackup = new DALBackup();
+        Backup backup = new Backup();
         public RestaurarBackup()
         {
             InitializeComponent();

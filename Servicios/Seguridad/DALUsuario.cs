@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidades;
-using Servicios;
 
-namespace DAL
+namespace Servicios.Seguridad
 {
     public class DALUsuario : conexionBD
     {
-        public List<object> crearUsuario(Entidades.Usuario usuario)
+        public List<object> crearUsuario(Usuario usuario)
         {
             try
             {
@@ -22,7 +20,7 @@ namespace DAL
             }
         }
 
-        public List<object> eliminarUsuario(Entidades.Usuario usuario)
+        public List<object> eliminarUsuario(Usuario usuario)
         {
             try
             {
@@ -34,7 +32,7 @@ namespace DAL
             }
         }
 
-        public List<object> buscarUsuario(Entidades.Usuario usuario)
+        public List<object> buscarUsuario(Usuario usuario)
         {
             try
             {
@@ -46,7 +44,7 @@ namespace DAL
             }
         }
 
-        public List<object> ModificarUsuario(Entidades.Usuario usuario)
+        public List<object> ModificarUsuario(Usuario usuario)
         {
             try
             {
@@ -58,7 +56,7 @@ namespace DAL
             }
         }
 
-        public List<object> validarUsuario(Entidades.Usuario usuario)
+        public List<object> validarUsuario(Usuario usuario)
         {
             try
             {
@@ -70,7 +68,7 @@ namespace DAL
             }
         }
 
-        public List<object> validarContraseña(Entidades.Usuario usuario)
+        public List<object> validarContraseña(Usuario usuario)
         {
             try
             {

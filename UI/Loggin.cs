@@ -13,8 +13,8 @@ namespace UI
 {
     public partial class Loggin : Form
     {
-        DAL.DALUsuario dalUsuario = new DAL.DALUsuario();
-        Entidades.Usuario usuario = new Entidades.Usuario();
+        DALUsuario dalUsuario = new DALUsuario();
+        Usuario usuario = new Usuario();
         public Loggin()
         {
             InitializeComponent();
@@ -45,7 +45,7 @@ namespace UI
                 return;
             }
 
-            Sesion.activa().usuario = (Entidades.Usuario)usuarios.First();
+            Sesion.activa().usuario = (Usuario)usuarios.First();
             UI.Menu menuForm = new UI.Menu();
             this.Hide();
             menuForm.ShowDialog(this);

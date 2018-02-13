@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidades;
-using Servicios;
 
-namespace DAL
+namespace Servicios
 {
     public class DALBitacora :conexionBD
     {
-        public List<object> crearProveedor(Entidades.Bitacora bitacora)
+        public List<object> crearProveedor(Bitacora bitacora)
         {
             try
             {
@@ -22,7 +20,7 @@ namespace DAL
             }
         }
 
-        public List<object> buscarProveedor(Entidades.Bitacora bitacora)
+        public List<object> buscarProveedor(Bitacora bitacora)
         {
             try
             {

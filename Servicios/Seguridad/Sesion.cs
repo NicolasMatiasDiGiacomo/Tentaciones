@@ -25,9 +25,9 @@ namespace Servicios.Seguridad
             return _sesion;
         }
 
-        private Entidades.Usuario _usuario;
+        private Usuario _usuario;
 
-        public Entidades.Usuario usuario
+        public Usuario usuario
         {
             get { return _usuario; }
             set { _usuario = value; }

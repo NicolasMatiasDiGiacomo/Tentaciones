@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Servicios;
 
 namespace UI.Proveedor
 {
@@ -15,14 +16,14 @@ namespace UI.Proveedor
         DAL.DALProveedor dalProveedor = new DAL.DALProveedor();
         DAL.DALContacto dalContacto = new DAL.DALContacto();
         DAL.DALDireccion dalDireccion = new DAL.DALDireccion();
-        DAL.DALBitacora dalBitacora = new DAL.DALBitacora();
+        DALBitacora dalBitacora = new DALBitacora();
         Entidades.Proveedor proveedor = new Entidades.Proveedor();
         Entidades.Proveedor proveedorSeleccionado = new Entidades.Proveedor();
         Entidades.Contacto contactoSeleccionado = new Entidades.Contacto();
         Entidades.Contacto contactoAsignadoSeleccionado = new Entidades.Contacto();
         Entidades.Direccion direccionSeleccionada = new Entidades.Direccion();
         Entidades.Direccion direccionAsignadaSeleccionada = new Entidades.Direccion();
-        Entidades.Bitacora bitacora = new Entidades.Bitacora();
+        Bitacora bitacora = new Bitacora();
         List<object> listaContactos = new List<object>();
         List<object> listaDirecciones = new List<object>();
         List<object> listaContactosAsignados = new List<object>();

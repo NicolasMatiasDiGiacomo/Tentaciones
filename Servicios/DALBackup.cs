@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidades;
-using Servicios;
 
-namespace DAL
+namespace Servicios
 {
     public class DALBackup : conexionBD
     {
-        public List<object> crearBackup(Entidades.Backup backup)
+        public List<object> crearBackup(Backup backup)
         {
             try
             {
@@ -22,7 +20,7 @@ namespace DAL
             }
         }
 
-        public List<object> restaurarBackup(Entidades.Backup backup)
+        public List<object> restaurarBackup(Backup backup)
         {
             try
             {
